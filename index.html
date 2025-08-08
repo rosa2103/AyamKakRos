@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AyamKakRos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Slide 1: INTRODUCTION -->
+  <section class="slide active" id="slide-intro">
+    <div class="container">
+      <h1>Selamat Datang di <span class="highlight">AyamKakRos</span></h1>
+      <p>
+        Spesialis ayam goreng dengan cita rasa autentik. Kami menyajikan nasi ayam ketumbar dan bawang putih lengkap dengan sambal khas Kak Ros yang kaya rasa dan menggoda selera.
+        <br><br>
+        Minuman racikan spesial seperti matcha, cokelat, dan salted caramel dengan tekstur creamy ala latte—tanpa tambahan air.
+        <br><br>
+        Cocok untuk semua acara & event. Info lebih lengkap ada di medsos kami!
+      </p>
+      <button onclick="nextSlide()">Next</button>
+    </div>
+  </section>
+
+  <!-- Slide 2: MAIN ACTIVITY -->
+  <section class="slide" id="slide-main">
+    <div class="container">
+      <h2>Menu Utama</h2>
+      <div class="menu-grid">
+        <a href="#slide-menu">🍗 Menu Makanan</a>
+        <a href="https://www.instagram.com/ayam_kakros/" target="_blank">📸 Instagram</a>
+        <a href="https://www.tiktok.com/@ayamkakros" target="_blank">🎵 TikTok</a>
+        <a href="#" onclick="gofood()">🍽️ GoFood</a>
+        <a href="#" onclick="shopeefood()">🛒 ShopeeFood</a>
+        <a href="#" onclick="grabfood()">🚗 GrabFood</a>
+        <a href="https://wa.me/6285167071487" target="_blank">💬 Whatsapp Admin</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slide 3: MENU MAKANAN -->
+  <section class="slide" id="slide-menu">
+    <div class="container">
+      <h2>Menu Makanan</h2>
+      <iframe 
+        src="https://www.canva.com/design/DAGvT1zq54I/L5TSaZXYkD5NMxerOa2-Mg/view?utm_content=DAGvT1zq54I&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" 
+        width="100%" height="600px" frameborder="0" allowfullscreen>
+      </iframe>
+      <button onclick="backToMain()">Kembali</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
