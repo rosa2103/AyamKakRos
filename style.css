@@ -32,7 +32,7 @@ button {
   font-size: 1rem;
   border: none;
   border-radius: 8px;
-  margin-top: 1rem;
+  margin: 1rem 0.5rem 0;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -80,6 +80,7 @@ button:hover {
 iframe {
   border-radius: 10px;
   border: 2px solid #d00000;
+  width: 100%;
 }
 
 .logo {
