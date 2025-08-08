@@ -7,31 +7,34 @@ function nextSlide() {
   slides[currentSlide].classList.add('active');
 }
 
+function backToIntro() {
+  slides.forEach(slide => slide.classList.remove('active'));
+  document.getElementById('slide-intro').classList.add('active');
+  currentSlide = 0;
+}
+
 function backToMain() {
   slides.forEach(slide => slide.classList.remove('active'));
   document.getElementById('slide-main').classList.add('active');
+  currentSlide = 1;
 }
 
 function showMenuSlide() {
   slides.forEach(slide => slide.classList.remove('active'));
   document.getElementById('slide-menu').classList.add('active');
-}
-
-function backToIntro() {
-  slides.forEach(slide => slide.classList.remove('active'));
-  document.getElementById('slide-intro').classList.add('active');
+  currentSlide = 2;
 }
 
 function gofood() {
-  window.open('https://gofood.link.tld', '_blank'); // Ganti dengan link asli GoFood
+  window.open('https://gofood.link.tld', '_blank'); // Ganti dengan link asli
 }
 
 function shopeefood() {
-  window.open('https://shopeefood.link.tld', '_blank'); // Ganti dengan link asli ShopeeFood
+  window.open('https://shopeefood.link.tld', '_blank'); // Ganti dengan link asli
 }
 
 function grabfood() {
-  window.open('https://grabfood.link.tld', '_blank'); // Ganti dengan link asli GrabFood
+  window.open('https://grabfood.link.tld', '_blank'); // Ganti dengan link asli
 }
 
 function whatsappAdmin() {
