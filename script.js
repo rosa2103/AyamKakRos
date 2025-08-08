@@ -1,28 +1,27 @@
-let currentSlide = 0;
 const slides = document.querySelectorAll('.slide');
 
-function nextSlide() {
-  slides[currentSlide].classList.remove('active');
-  currentSlide = (currentSlide + 1) % slides.length;
-  slides[currentSlide].classList.add('active');
+function showSlide(id) {
+  slides.forEach(slide => slide.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
 }
 
+// Intro ➜ Main
+function goToMain() {
+  showSlide('slide-main');
+}
+
+// Main ➜ Intro
 function backToIntro() {
-  slides.forEach(slide => slide.classList.remove('active'));
-  document.getElementById('slide-intro').classList.add('active');
-  currentSlide = 0;
+  showSlide('slide-intro');
+}
+
+// Main ➜ Menu Makanan
+function showMenuSlide() {
+  showSlide('slide-menu');
 }
 
 function backToMain() {
-  slides.forEach(slide => slide.classList.remove('active'));
-  document.getElementById('slide-main').classList.add('active');
-  currentSlide = 1;
-}
-
-function showMenuSlide() {
-  slides.forEach(slide => slide.classList.remove('active'));
-  document.getElementById('slide-menu').classList.add('active');
-  currentSlide = 2;
+  showSlide('slide-main');
 }
 
 function gofood() {
