@@ -20,10 +20,7 @@ function showMenuSlide() {
   showSlide('slide-menu');
 }
 
-function backToMain() {
-  showSlide('slide-main');
-}
-
+// Link External
 function gofood() {
   window.open('https://gofood.link.tld', '_blank'); // Ganti dengan link asli
 }
