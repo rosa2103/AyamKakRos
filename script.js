@@ -17,16 +17,21 @@ function showMenuSlide() {
   document.getElementById('slide-menu').classList.add('active');
 }
 
+function backToIntro() {
+  slides.forEach(slide => slide.classList.remove('active'));
+  document.getElementById('slide-intro').classList.add('active');
+}
+
 function gofood() {
-  window.open('https://gofood.link.tld', '_blank'); // ganti dengan link asli
+  window.open('https://gofood.link.tld', '_blank'); // Ganti dengan link asli GoFood
 }
 
 function shopeefood() {
-  window.open('https://shopeefood.link.tld', '_blank'); // ganti dengan link asli
+  window.open('https://shopeefood.link.tld', '_blank'); // Ganti dengan link asli ShopeeFood
 }
 
 function grabfood() {
-  window.open('https://grabfood.link.tld', '_blank'); // ganti dengan link asli
+  window.open('https://grabfood.link.tld', '_blank'); // Ganti dengan link asli GrabFood
 }
 
 function whatsappAdmin() {
